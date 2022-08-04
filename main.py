@@ -4,8 +4,8 @@
 
 def main(): 
     a = 1
-    b = 2
-    c = a + b
+    b = 3
+    c = a + b ** 2
     print(c)
 
 if __name__ == "__main__":

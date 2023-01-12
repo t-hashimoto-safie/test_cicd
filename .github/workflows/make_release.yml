@@ -1,4 +1,6 @@
 
+name: Make release
+
 on:
   push:
     tags: ["v*"]

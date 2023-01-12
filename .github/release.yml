@@ -11,3 +11,5 @@ changelog:
     - title: Other Changes
       labels:
         - "*"
+
+section_name:

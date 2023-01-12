@@ -21,14 +21,16 @@ jobs:
 
       - name: Create body
         id: create-body
-        run: >
-          echo "BODY=## Version Dependencies\n
-          * Plugin: \n
-          * App: ${{ steps.current-tag.outputs.VERSION }}\n
-          * Model: \n* SNPE: \n* SafieEdgeAppFramework: \n
-          * Mininum FW version: \n
-          ## Release Date\n
-          * Staging\n
+        run: |
+          echo "BODY=## Version Dependencies\n\
+          * Plugin: \n\
+          * App: ${{ steps.current-tag.outputs.VERSION }}\n\
+          * Model: \n\
+          * SNPE: \n\
+          * SafieEdgeAppFramework: \n\
+          * Mininum FW version: \n\
+          ## Release Date\n\
+          * Staging\n\
           * Production" >> $GITHUB_OUTPUT
 
       - name: Make release

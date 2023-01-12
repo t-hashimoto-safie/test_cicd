@@ -28,4 +28,4 @@ jobs:
           -H "Accept: application/vnd.github+json" \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           https://api.github.com/repos/${{ github.repository }}/releases \
-          -d '{"tag_name":"${{ steps.current-tag.outputs.TAG }}","name":"${{ steps.current-tag.outputs.TAG }}","body":"## Version Dependencies\n ## Release Date \n -Staging\n -Production","draft":false,"prerelease":true,"generate_release_notes":true}'
+          -d '{"tag_name":"${{ steps.current-tag.outputs.TAG }}","name":"${{ steps.current-tag.outputs.TAG }}","body":"## Version Dependencies\n* Plugin: \n* App: ${{ steps.current-tag.outputs.TAG }}\n* Model: \n* SNPE: \n* SafieEdgeAppFramework: \n* Mininum FW version: \n## Release Date\n* Staging\n* Production","draft":false,"prerelease":true,"generate_release_notes":true}'
